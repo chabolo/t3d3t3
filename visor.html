@@ -10,18 +10,18 @@
                 
         <script language="JavaScript">
             function inicia(){
-                var canal = decodeURI(document.URL.match('#id=(.*),name=(.*)')[1]);
+                var canal = decodeURI(document.URL.match('#xmltv=(.*),name=(.*)')[1]);
                 var tabi = document.getElementsByClassName("fecha");
                 tabi[0].style.backgroundColor="#212121";
                 tabi[0].style.bordercolor="#212121";
-                document.getElementById("l_canal").innerHTML = decodeURI(document.URL.match('#id=(.*),name=(.*)')[2]);
+                document.getElementById("l_canal").innerHTML = decodeURI(document.URL.match('#xmltv=(.*),name=(.*)')[2]);
                 clonar(canal+'_0');
             }
         </script>
 
         <script language="JavaScript">
             function carga_epg(dia){
-                var canal = decodeURI(document.URL.match('#id=(.*),name=(.*)')[1])+'_'+dia;
+                var canal = decodeURI(document.URL.match('#xmltv=(.*),name=(.*)')[1])+'_'+dia;
                 var tabi = document.getElementsByClassName("fecha");
                 for (t=0; t<3; t++){
                     tabi[t].style.backgroundColor="#424242";
@@ -83,7 +83,7 @@
 				<div class="epg-dia">21:00  Telediario 2</div>
 				<div class="epg-dia">22:30  Al filo del mañana</div>
 			</div>
-			<div id="La 1_1" style="display:none">
+			<div id="La1.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:15  Danko</div>
 				<div class="epg-dia">01:50  Comando Actualidad</div>
 				<div class="epg-dia">02:45  Noticias 24H</div>
@@ -104,7 +104,7 @@
 				<div class="epg-dia">22:05  El nombre de la rosa</div>
 				<div class="epg-dia">23:50  Grupo 7</div>
 			</div>
-			<div id="La 1_2" style="display:none">
+			<div id="La1.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">01:20  Víctimas del misterio</div>
 				<div class="epg-dia">02:15  Noticias 24H</div>
 				<div class="epg-dia">06:00  Noticias 24H</div>
@@ -154,7 +154,7 @@
 				<div class="epg-dia">22:00  ¡Qué noche la de aquel día!</div>
 				<div class="epg-dia">23:40  En portada</div>
 			</div>
-			<div id="La 2_1" style="display:none">
+			<div id="La2.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:25  El árbol magnético</div>
 				<div class="epg-dia">01:40  Conciertos de Radio-3</div>
 				<div class="epg-dia">02:10  Vida en el espacio exterior</div>
@@ -186,7 +186,7 @@
 				<div class="epg-dia">21:05  Documental</div>
 				<div class="epg-dia">22:00  Fortunata y Jacinta</div>
 			</div>
-			<div id="La 2_2" style="display:none">
+			<div id="La2.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:45  Mujeres en La 2</div>
 				<div class="epg-dia">01:30  Conciertos de Radio-3</div>
 				<div class="epg-dia">02:00  Documenta2</div>
@@ -241,7 +241,7 @@
 				<div class="epg-dia">21:55  El hormiguero 3.0: Quédate en casa</div>
 				<div class="epg-dia">23:00  En primera línea</div>
 			</div>
-			<div id="Antena 3_1" style="display:none">
+			<div id="Antena3.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:10  Especial Coronavirus</div>
 				<div class="epg-dia">01:30  La rival</div>
 				<div class="epg-dia">02:45  Live casino</div>
@@ -266,7 +266,7 @@
 				<div class="epg-dia">21:55  El hormiguero 3.0</div>
 				<div class="epg-dia">23:00  En el ojo de la tormenta</div>
 			</div>
-			<div id="Antena 3_2" style="display:none">
+			<div id="Antena3.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:40  En el nombre del Rey 2</div>
 				<div class="epg-dia">02:30  Live casino</div>
 				<div class="epg-dia">03:15  Minutos musicales</div>
@@ -320,7 +320,7 @@
 				<div class="epg-dia">21:15  First Dates</div>
 				<div class="epg-dia">22:45  Mzungu-operación Congo</div>
 			</div>
-			<div id="Cuatro_1" style="display:none">
+			<div id="Cuatro.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:10  Planeta Calleja</div>
 				<div class="epg-dia">01:15  Planeta Calleja</div>
 				<div class="epg-dia">02:25  Puro Cuatro</div>
@@ -353,7 +353,7 @@
 				<div class="epg-dia">22:00  Supervivientes: Última Hora</div>
 				<div class="epg-dia">22:40  Lejos De Ti</div>
 			</div>
-			<div id="Telecinco_1" style="display:none">
+			<div id="Telecinco.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:00  Escenas De Matrimonio</div>
 				<div class="epg-dia">00:35  Escenas De Matrimonio</div>
 				<div class="epg-dia">01:10  Escenas De Matrimonio</div>
@@ -383,7 +383,7 @@
 				<div class="epg-dia">21:30  El intermedio</div>
 				<div class="epg-dia">23:00  En primera línea</div>
 			</div>
-			<div id="laSexta_1" style="display:none">
+			<div id="LaSexta.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:10  La niñera perfecta</div>
 				<div class="epg-dia">01:40  Las primeras 48 horas</div>
 				<div class="epg-dia">02:20  Poker Caribbean Adventure</div>
@@ -403,7 +403,7 @@
 				<div class="epg-dia">21:30  El intermedio</div>
 				<div class="epg-dia">22:30  Pesadilla en la cocina</div>
 			</div>
-			<div id="laSexta_2" style="display:none">
+			<div id="LaSexta.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">02:30  Campeonato Europeo de Póquer</div>
 				<div class="epg-dia">03:00  The game show</div>
 				<div class="epg-dia">03:45  Minutos musicales</div>
@@ -468,7 +468,7 @@
 				<div class="epg-dia">23:35  Modern Family</div>
 				<div class="epg-dia">23:56  Modern Family</div>
 			</div>
-			<div id="Neox_1" style="display:none">
+			<div id="Neox.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:18  Modern Family</div>
 				<div class="epg-dia">00:40  Modern Family</div>
 				<div class="epg-dia">01:01  Modern Family</div>
@@ -496,7 +496,7 @@
 				<div class="epg-dia">21:20  Los Simpson</div>
 				<div class="epg-dia">22:30  Big Bang</div>
 			</div>
-			<div id="Neox_2" style="display:none">
+			<div id="Neox.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">01:45  Mom</div>
 				<div class="epg-dia">05:00  Minutos musicales</div>
 				<div class="epg-dia">05:50  Estación Neox</div>
@@ -531,7 +531,7 @@
 				<div class="epg-dia">21:45  Fugitiva</div>
 				<div class="epg-dia">22:40  Un verano en Manhattan</div>
 			</div>
-			<div id="Nova_1" style="display:none">
+			<div id="Nova.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:10  Amor verdadero</div>
 				<div class="epg-dia">01:35  Asesinato sin condena</div>
 				<div class="epg-dia">03:05  Lucifer</div>
@@ -553,7 +553,7 @@
 				<div class="epg-dia">21:45  Fugitiva</div>
 				<div class="epg-dia">22:40  Cisne blanco</div>
 			</div>
-			<div id="Nova_2" style="display:none">
+			<div id="Nova.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:05  Trágica obsesión</div>
 				<div class="epg-dia">01:30  La venganza de una hermana</div>
 				<div class="epg-dia">03:00  Crimen en el paraíso</div>
@@ -611,7 +611,7 @@
 				<div class="epg-dia">21:56  Crónicas carnívoras</div>
 				<div class="epg-dia">22:20  Justicia Extrema</div>
 			</div>
-			<div id="Mega_1" style="display:none">
+			<div id="Mega.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:00  El chiringuito de jugones</div>
 				<div class="epg-dia">02:00  The game show</div>
 				<div class="epg-dia">02:45  Restaurante indiscreto</div>
@@ -631,7 +631,7 @@
 				<div class="epg-dia">21:10  Crónicas carnívoras</div>
 				<div class="epg-dia">22:15  Juego de dragones</div>
 			</div>
-			<div id="Mega_2" style="display:none">
+			<div id="Mega.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:00  El chiringuito de jugones</div>
 				<div class="epg-dia">02:00  The game show</div>
 				<div class="epg-dia">02:45  Restaurante indiscreto</div>
@@ -673,7 +673,7 @@
 				<div class="epg-dia">22:30  Profilage: Perfiles criminales</div>
 				<div class="epg-dia">23:25  Profilage: Perfiles criminales</div>
 			</div>
-			<div id="Atreseries_1" style="display:none">
+			<div id="Atreseries.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:20  Profilage: Perfiles criminales</div>
 				<div class="epg-dia">01:15  Profilage: Perfiles criminales</div>
 				<div class="epg-dia">02:10  Profilage: Perfiles criminales</div>
@@ -690,7 +690,7 @@
 				<div class="epg-dia">20:20  Ley y orden</div>
 				<div class="epg-dia">22:30  Navy</div>
 			</div>
-			<div id="Atreseries_2" style="display:none">
+			<div id="Atreseries.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">02:05  Turno de Noche</div>
 				<div class="epg-dia">02:45  Aquí no hay quien viva</div>
 				<div class="epg-dia">05:00  Más de series</div>
@@ -745,7 +745,7 @@
 				<div class="epg-dia">20:50  La Que Se Avecina</div>
 				<div class="epg-dia">22:30  Cine: 'inmersion Letal'</div>
 			</div>
-			<div id="FDF_1" style="display:none">
+			<div id="FDF.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:25  La Que Se Avecina</div>
 				<div class="epg-dia">01:55  La Que Se Avecina</div>
 				<div class="epg-dia">03:15  El Club De Los Mandangas</div>
@@ -791,7 +791,7 @@
 				<div class="epg-dia">23:00  C.s.i. Las Vegas</div>
 				<div class="epg-dia">23:45  C.s.i. Las Vegas</div>
 			</div>
-			<div id="Energy_1" style="display:none">
+			<div id="Energy.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:35  C.s.i. Las Vegas</div>
 				<div class="epg-dia">01:15  C.s.i. Las Vegas</div>
 				<div class="epg-dia">02:00  Sleepy Hollow</div>
@@ -835,7 +835,7 @@
 				<div class="epg-dia">21:00  Scyd: 'el Mejor Regalo'</div>
 				<div class="epg-dia">22:30  Scyd: 'la Ladrona De Libros'</div>
 			</div>
-			<div id="Divinity_1" style="display:none">
+			<div id="Divinity.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:30  Scyd: 'belle'</div>
 				<div class="epg-dia">02:30  Scyd: 'reuniones Secretas'</div>
 				<div class="epg-dia">04:20  Horóscopo De Esperanza Gracia</div>
@@ -874,7 +874,7 @@
 				<div class="epg-dia">22:50  En El Punto De Mira</div>
 				<div class="epg-dia">23:30  En El Punto De Mira</div>
 			</div>
-			<div id="Be Mad_1" style="display:none">
+			<div id="Bemad.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:15  En El Punto De Mira</div>
 				<div class="epg-dia">00:50  En El Punto De Mira</div>
 				<div class="epg-dia">01:40  Mejor Llama A Kiko</div>
@@ -901,7 +901,7 @@
 				<div class="epg-dia">22:05  Lock &amp; Stock</div>
 				<div class="epg-dia">23:52  Asuntos pendientes (36, Quai des Orfèvres)</div>
 			</div>
-			<div id="Paramount Network_1" style="display:none">
+			<div id="Paramount.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">01:53  El mundo es nuestro</div>
 				<div class="epg-dia">03:16  Sombras</div>
 				<div class="epg-dia">04:13  Central de Cómicos</div>
@@ -922,7 +922,7 @@
 				<div class="epg-dia">20:15  Sherlock</div>
 				<div class="epg-dia">22:00  Fanático</div>
 			</div>
-			<div id="Paramount Network_2" style="display:none">
+			<div id="Paramount.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:00  Secuestro (Switchback)</div>
 				<div class="epg-dia">02:05  Marisa en los bosques</div>
 				<div class="epg-dia">03:25  Central de Cómicos</div>
@@ -961,7 +961,7 @@
 				<div class="epg-dia">22:20  El tiempo</div>
 				<div class="epg-dia">22:30  Noticias 24H</div>
 			</div>
-			<div id="24h_1" style="display:none">
+			<div id="24Horas.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">01:30  Conversatorios en Casa de América</div>
 				<div class="epg-dia">02:00  Noticias 24H</div>
 				<div class="epg-dia">04:30  En portada</div>
@@ -980,7 +980,7 @@
 				<div class="epg-dia">21:54  El tiempo</div>
 				<div class="epg-dia">22:05  Noticias 24H</div>
 			</div>
-			<div id="24h_2" style="display:none">
+			<div id="24Horas.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">01:30  Emprende</div>
 				<div class="epg-dia">02:00  Noticias 24H</div>
 				<div class="epg-dia">04:30  Crónicas</div>
@@ -1017,7 +1017,7 @@
 				<div class="epg-dia">20:40  Waterpolo Femenino: Final</div>
 				<div class="epg-dia">22:00  Copa del Rey (T97/98)</div>
 			</div>
-			<div id="Teledeporte_1" style="display:none">
+			<div id="TDP.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:35  Conexión Vintage</div>
 				<div class="epg-dia">01:45  ITU World Triathlon Series: Yokohama</div>
 				<div class="epg-dia">03:45  Mundial de ciclismo en pista</div>
@@ -1029,7 +1029,7 @@
 				<div class="epg-dia">19:00  Teledeporte</div>
 				<div class="epg-dia">23:00  Teledeporte</div>
 			</div>
-			<div id="Teledeporte_2" style="display:none">
+			<div id="TDP.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">03:00  Teledeporte</div>
 				<div class="epg-dia">11:00  Teledeporte</div>
 				<div class="epg-dia">15:00  Teledeporte</div>
@@ -1056,7 +1056,7 @@
 				<div class="epg-dia">23:30  UFC 218: Holloway vs Aldo 2</div>
 				<div class="epg-dia">23:53  UFC 218: Holloway vs Aldo 2</div>
 			</div>
-			<div id="GOL_1" style="display:none">
+			<div id="GOL.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:30  Ultimate Fighting Championship</div>
 				<div class="epg-dia">01:00  UFC 217: Bisping vs St-Pierre</div>
 				<div class="epg-dia">01:40  UFC 217: Bisping vs St-Pierre</div>
@@ -1077,7 +1077,7 @@
 				<div class="epg-dia">23:00  Ultimate Fighting Championship</div>
 				<div class="epg-dia">23:30  UFC 219: Cyborg vs Holm</div>
 			</div>
-			<div id="GOL_2" style="display:none">
+			<div id="GOL.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:05  Ultimate Fighting Championship</div>
 				<div class="epg-dia">00:50  UFC históricos</div>
 				<div class="epg-dia">01:40  Ultimate Fighting Championship</div>
@@ -1108,7 +1108,7 @@
 				<div class="epg-dia">21:30  Justicia infinita</div>
 				<div class="epg-dia">23:00  Agenda oculta</div>
 			</div>
-			<div id="RealMadrid TV_1" style="display:none">
+			<div id="RMTV.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:55  Historia que tú hiciste: Liga 94/95</div>
 				<div class="epg-dia">02:40  LaLiga Santander (T19/20)</div>
 				<div class="epg-dia">04:30  Historias con alma</div>
@@ -1126,7 +1126,7 @@
 				<div class="epg-dia">21:30  Atraco en Belfast</div>
 				<div class="epg-dia">22:55  Huida desesperada</div>
 			</div>
-			<div id="RealMadrid TV_2" style="display:none">
+			<div id="RMTV.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:40  Hoy jugamos</div>
 				<div class="epg-dia">04:30  Historias con alma</div>
 				<div class="epg-dia">05:25  Hoy jugamos</div>
@@ -1241,7 +1241,7 @@
 				<div class="epg-dia">23:35  Teen Titans Go!</div>
 				<div class="epg-dia">23:50  Teen Titans Go!</div>
 			</div>
-			<div id="Boing_1" style="display:none">
+			<div id="Boing.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:00  Teen Titans Go!</div>
 				<div class="epg-dia">00:15  El Asombroso Mundo De Gumball</div>
 				<div class="epg-dia">00:40  El Asombroso Mundo De Gumball</div>
@@ -1332,7 +1332,7 @@
 				<div class="epg-dia">23:21  Escuela de Rock</div>
 				<div class="epg-dia">23:42  100 Cosas que hacer antes de ir al instituto!</div>
 			</div>
-			<div id="Clan_1" style="display:none">
+			<div id="Clan.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:04  Victorious</div>
 				<div class="epg-dia">00:27  Escuela de Rock</div>
 				<div class="epg-dia">00:48  Cuéntame cómo pasó</div>
@@ -1412,7 +1412,7 @@
 				<div class="epg-dia">23:21  Escuela de Rock</div>
 				<div class="epg-dia">23:42  100 Cosas que hacer antes de ir al instituto!</div>
 			</div>
-			<div id="Clan_2" style="display:none">
+			<div id="Clan.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:04  Victorious</div>
 				<div class="epg-dia">00:27  Escuela de Rock</div>
 				<div class="epg-dia">00:48  Cuéntame cómo pasó</div>
@@ -1504,7 +1504,7 @@
 				<div class="epg-dia">20:30  Canal Sur Noticias 2</div>
 				<div class="epg-dia">21:45  Andalucía de Fiesta</div>
 			</div>
-			<div id="Canal Sur A._1" style="display:none">
+			<div id="CanalSurA.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:45  Andaluces por España</div>
 				<div class="epg-dia">02:00  Foro flamenco</div>
 				<div class="epg-dia">03:00  Andaluces por el mundo</div>
@@ -1522,7 +1522,7 @@
 				<div class="epg-dia">22:20  El Sol, la Sal, el Son</div>
 				<div class="epg-dia">23:25  Tierra azul</div>
 			</div>
-			<div id="Canal Sur A._2" style="display:none">
+			<div id="CanalSurA.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:10  Documentales andaluces</div>
 				<div class="epg-dia">02:15  Al Sur</div>
 				<div class="epg-dia">02:40  Lo Flamenco</div>
@@ -1560,7 +1560,7 @@
 				<div class="epg-dia">22:30  Zona Historia</div>
 				<div class="epg-dia">23:30  Noticias OC</div>
 			</div>
-			<div id="Onda Cádiz_1" style="display:none">
+			<div id="OndaCadiz.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:00  En el nuevo Carranza</div>
 				<div class="epg-dia">01:00  El mirador</div>
 				<div class="epg-dia">04:00  Fin emisión</div>
@@ -1582,7 +1582,7 @@
 				<div class="epg-dia">23:00  Especiales</div>
 				<div class="epg-dia">23:30  Noticias OC</div>
 			</div>
-			<div id="Onda Cádiz_2" style="display:none">
+			<div id="OndaCadiz.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:00  En el nuevo Carranza</div>
 				<div class="epg-dia">01:00  El mirador</div>
 				<div class="epg-dia">04:00  Fin emisión</div>
@@ -1646,7 +1646,7 @@
 				<div class="epg-dia">22:15  EuroNews</div>
 				<div class="epg-dia">23:50  Otro punto de vista</div>
 			</div>
-			<div id="Aragón TV_1" style="display:none">
+			<div id="AragonTV.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:50  Aragón Noticias 2</div>
 				<div class="epg-dia">01:50  La pera limonera</div>
 				<div class="epg-dia">02:20  La ventana indiscreta</div>
@@ -1675,7 +1675,7 @@
 				<div class="epg-dia">22:15  La voz de mi calle</div>
 				<div class="epg-dia">23:15  De ratones y vinilos</div>
 			</div>
-			<div id="Aragón TV_2" style="display:none">
+			<div id="AragonTV.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:05  Poldark</div>
 				<div class="epg-dia">01:05  Otro punto de vista</div>
 				<div class="epg-dia">01:55  Aragón Noticias 2</div>
@@ -1724,7 +1724,7 @@
 				<div class="epg-dia">21:40  El Picu</div>
 				<div class="epg-dia">22:15  Asturianos en el mundo</div>
 			</div>
-			<div id="TPA7_1" style="display:none">
+			<div id="TPA.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">01:35  Redifusión</div>
 				<div class="epg-dia">08:00  Asturias Hoy 1ª edición</div>
 				<div class="epg-dia">09:00  TPA Noticias Matinal</div>
@@ -1742,7 +1742,7 @@
 				<div class="epg-dia">21:40  El Picu</div>
 				<div class="epg-dia">22:15  Orquesta principado siglo XXI</div>
 			</div>
-			<div id="TPA7_2" style="display:none">
+			<div id="TPA.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:30  Pieces</div>
 				<div class="epg-dia">01:15  Redifusión</div>
 				<div class="epg-dia">08:00  Asturias Hoy 1ª edición</div>
@@ -1784,7 +1784,7 @@
 				<div class="epg-dia">22:30  Entrevista al vicepresidente del Gobierno</div>
 				<div class="epg-dia">23:35  Diamante de sangre</div>
 			</div>
-			<div id="Televisión Canaria_1" style="display:none">
+			<div id="Canarias.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">01:20  Diario Covid-19</div>
 				<div class="epg-dia">01:25  Bolívar</div>
 				<div class="epg-dia">02:05  Tomahawk rojo</div>
@@ -1817,7 +1817,7 @@
 				<div class="epg-dia">22:30  Una hora menos. En casa contigo</div>
 				<div class="epg-dia">23:05  Fuera de plano</div>
 			</div>
-			<div id="Televisión Canaria_2" style="display:none">
+			<div id="Canarias.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:30  Somos gente fantástica</div>
 				<div class="epg-dia">00:45  Diario Covid-19</div>
 				<div class="epg-dia">00:55  Bolívar</div>
@@ -1893,7 +1893,7 @@
 				<div class="epg-dia">22:00  Just for laughs</div>
 				<div class="epg-dia">22:30  Remember</div>
 			</div>
-			<div id="CMM_1" style="display:none">
+			<div id="CMM.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:00  El último poli duro</div>
 				<div class="epg-dia">00:45  El último poli duro</div>
 				<div class="epg-dia">01:30  Alma de copla</div>
@@ -1922,7 +1922,7 @@
 				<div class="epg-dia">21:00  Castellano-manchegos por el mundo</div>
 				<div class="epg-dia">22:30  Los novios de mi mujer</div>
 			</div>
-			<div id="CMM_2" style="display:none">
+			<div id="CMM.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:00  Con ton y son</div>
 				<div class="epg-dia">01:30  Alma de copla</div>
 				<div class="epg-dia">04:00  Castilla-La Mancha a las 8</div>
@@ -1970,7 +1970,7 @@
 				<div class="epg-dia">21:30  De casa en casa</div>
 				<div class="epg-dia">22:30  Mujeres en la granja</div>
 			</div>
-			<div id="La 7_1" style="display:none">
+			<div id="La7.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:10  CyLTV Noticias (II)</div>
 				<div class="epg-dia">00:50  El tiempo</div>
 				<div class="epg-dia">01:00  Vamos a ver</div>
@@ -1995,7 +1995,7 @@
 				<div class="epg-dia">21:30  Más que palabras</div>
 				<div class="epg-dia">22:15  Hecho en Castilla y León</div>
 			</div>
-			<div id="La 7_2" style="display:none">
+			<div id="La7.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:00  CyLTV Noticias (II)</div>
 				<div class="epg-dia">00:50  El tiempo</div>
 				<div class="epg-dia">01:00  Más que palabras</div>
@@ -2045,7 +2045,7 @@
 				<div class="epg-dia">22:15  Tabús</div>
 				<div class="epg-dia">23:30  L'ofici de viure</div>
 			</div>
-			<div id="TV3_1" style="display:none">
+			<div id="TV3.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:05  L'ofici de viure</div>
 				<div class="epg-dia">00:35  Còmics</div>
 				<div class="epg-dia">01:50  Notícies 3/24</div>
@@ -2064,7 +2064,7 @@
 				<div class="epg-dia">23:05  Alguna pregunta més?</div>
 				<div class="epg-dia">23:40  La forastera</div>
 			</div>
-			<div id="TV3_2" style="display:none">
+			<div id="TV3.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:35  Il·luminats</div>
 				<div class="epg-dia">01:10  Notícies 3/24</div>
 				<div class="epg-dia">06:00  Notícies 3/24</div>
@@ -2104,7 +2104,7 @@
 				<div class="epg-dia">22:15  Tabús</div>
 				<div class="epg-dia">23:30  L'ofici de viure</div>
 			</div>
-			<div id="324_1" style="display:none">
+			<div id="324.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:05  L'ofici de viure</div>
 				<div class="epg-dia">00:35  Còmics</div>
 				<div class="epg-dia">01:30  Notícies 3/24</div>
@@ -2140,7 +2140,7 @@
 				<div class="epg-dia">23:05  Alguna pregunta més?</div>
 				<div class="epg-dia">23:40  La forastera</div>
 			</div>
-			<div id="324_2" style="display:none">
+			<div id="324.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:40  Notícies 3/24</div>
 				<div class="epg-dia">01:00  Notícies 3/24</div>
 				<div class="epg-dia">01:30  Notícies 3/24</div>
@@ -2254,7 +2254,7 @@
 				<div class="epg-dia">22:08  Tot el temps del món</div>
 				<div class="epg-dia">22:33  Incerta glòria</div>
 			</div>
-			<div id="33_1" style="display:none">
+			<div id="C33.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:23  Nakany Kanté, Mercè 2018</div>
 				<div class="epg-dia">01:34  Tot el temps del món</div>
 				<div class="epg-dia">01:59  Fuerzas de la naturaleza: Elementos</div>
@@ -2343,7 +2343,7 @@
 				<div class="epg-dia">22:10  Tot el temps del món</div>
 				<div class="epg-dia">22:40  La pell freda</div>
 			</div>
-			<div id="33_2" style="display:none">
+			<div id="C33.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:25  Porca Misèria</div>
 				<div class="epg-dia">01:23  Tot el temps del món</div>
 				<div class="epg-dia">01:53  Fuerzas de la naturaleza</div>
@@ -2513,7 +2513,7 @@
 				<div class="epg-dia">22:08  Tot el temps del món</div>
 				<div class="epg-dia">22:33  Incerta glòria</div>
 			</div>
-			<div id="Super3_1" style="display:none">
+			<div id="Super.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:23  Nakany Kanté, Mercè 2018</div>
 				<div class="epg-dia">01:34  Tot el temps del món</div>
 				<div class="epg-dia">01:59  Fuerzas de la naturaleza: Elementos</div>
@@ -2602,7 +2602,7 @@
 				<div class="epg-dia">22:10  Tot el temps del món</div>
 				<div class="epg-dia">22:40  La pell freda</div>
 			</div>
-			<div id="Super3_2" style="display:none">
+			<div id="Super.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:25  Porca Misèria</div>
 				<div class="epg-dia">01:23  Tot el temps del món</div>
 				<div class="epg-dia">01:53  Fuerzas de la naturaleza</div>
@@ -2773,7 +2773,7 @@
 				<div class="epg-dia">22:34  Programes Externs Esports</div>
 				<div class="epg-dia">23:03  Una línia fina</div>
 			</div>
-			<div id="Esport 3_1" style="display:none">
+			<div id="E3.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:06  Alpinisme</div>
 				<div class="epg-dia">00:32  Everest 93</div>
 				<div class="epg-dia">01:29  Alpinisme</div>
@@ -2790,7 +2790,7 @@
 				<div class="epg-dia">23:00  Una línia fina</div>
 				<div class="epg-dia">23:55  Programes Externs Esports</div>
 			</div>
-			<div id="Esport 3_2" style="display:none">
+			<div id="E3.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:00  Fotografies</div>
 				<div class="epg-dia">00:25  Parets al sostre del món</div>
 				<div class="epg-dia">01:15  Encordades</div>
@@ -2842,7 +2842,7 @@
 				<div class="epg-dia">22:20  Velaí</div>
 				<div class="epg-dia">23:20  Velaí</div>
 			</div>
-			<div id="Canal Extremadura_1" style="display:none">
+			<div id="Extremadura.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:25  X La Cara</div>
 				<div class="epg-dia">00:50  De otra manera</div>
 				<div class="epg-dia">01:50  El huerto de Renato</div>
@@ -2875,7 +2875,7 @@
 				<div class="epg-dia">22:50  Mi pueblo en la tele</div>
 				<div class="epg-dia">23:15  Trastos y tesoros</div>
 			</div>
-			<div id="Canal Extremadura_2" style="display:none">
+			<div id="Extremadura.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:00  X La Cara</div>
 				<div class="epg-dia">00:35  De otra manera</div>
 				<div class="epg-dia">01:30  El huerto de Renato</div>
@@ -2928,7 +2928,7 @@
 				<div class="epg-dia">21:55  Malicia noticias</div>
 				<div class="epg-dia">22:25  Pratos Combinados</div>
 			</div>
-			<div id="TVG_1" style="display:none">
+			<div id="TVGAL.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:10  Ruta a modiño por</div>
 				<div class="epg-dia">00:40  Auga Seca</div>
 				<div class="epg-dia">01:30  Ocean's Thirteen</div>
@@ -2953,7 +2953,7 @@
 				<div class="epg-dia">21:50  O Tempo</div>
 				<div class="epg-dia">22:05  Land Rober Tunai Show</div>
 			</div>
-			<div id="TVG_2" style="display:none">
+			<div id="TVGAL.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:45  Os cantos rolados</div>
 				<div class="epg-dia">01:25  A Revista</div>
 				<div class="epg-dia">02:30  Noite de jazz</div>
@@ -3002,7 +3002,7 @@
 				<div class="epg-dia">22:15  Fred i calent</div>
 				<div class="epg-dia">23:15  Fred i calent</div>
 			</div>
-			<div id="IB3_1" style="display:none">
+			<div id="IB3.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:15  Fred i calent</div>
 				<div class="epg-dia">01:15  IB3 Notícies Vespre</div>
 				<div class="epg-dia">02:05  El temps</div>
@@ -3026,7 +3026,7 @@
 				<div class="epg-dia">21:30  Jo en sé més que tu</div>
 				<div class="epg-dia">22:15  Uep! Com anam?</div>
 			</div>
-			<div id="IB3_2" style="display:none">
+			<div id="IB3.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">01:45  IB3 Notícies Vespre</div>
 				<div class="epg-dia">02:35  El temps</div>
 				<div class="epg-dia">02:40  Cinc dies</div>
@@ -3081,7 +3081,7 @@
 				<div class="epg-dia">21:24  Madrid contra el coronavirus</div>
 				<div class="epg-dia">22:37  Un año de tu vida</div>
 			</div>
-			<div id="Telemadrid_1" style="display:none">
+			<div id="TeleMadrid.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:59  Aquellos maravillosos años</div>
 				<div class="epg-dia">01:32  Ruta 179</div>
 				<div class="epg-dia">02:18  Ruta 179</div>
@@ -3109,7 +3109,7 @@
 				<div class="epg-dia">21:25  Madrid contra el coronavirus</div>
 				<div class="epg-dia">22:40  El poder del Tai Chi</div>
 			</div>
-			<div id="Telemadrid_2" style="display:none">
+			<div id="TeleMadrid.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:15  Objetivo</div>
 				<div class="epg-dia">01:45  Ruta 179</div>
 				<div class="epg-dia">02:25  Ruta 179</div>
@@ -3177,7 +3177,7 @@
 				<div class="epg-dia">21:22  Madrid contra el coronavirus</div>
 				<div class="epg-dia">22:37  Único testigo</div>
 			</div>
-			<div id="LaOtra_1" style="display:none">
+			<div id="LaOtra.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:25  Ejecución inminente</div>
 				<div class="epg-dia">02:30  El territorio de la bestia</div>
 				<div class="epg-dia">03:56  LaOtra Ciencia</div>
@@ -3221,7 +3221,7 @@
 				<div class="epg-dia">22:40  Secretos del Universo con Morgan Freeman?</div>
 				<div class="epg-dia">23:25  Secretos del Universo con Morgan Freeman?</div>
 			</div>
-			<div id="LaOtra_2" style="display:none">
+			<div id="LaOtra.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:10  La historia del Universo</div>
 				<div class="epg-dia">01:00  La historia del Universo</div>
 				<div class="epg-dia">01:45  Desaparecidos: Secretos de un hijo</div>
@@ -3284,7 +3284,7 @@
 				<div class="epg-dia">22:00  En la piel de...</div>
 				<div class="epg-dia">23:15  Entre mujeres</div>
 			</div>
-			<div id="7 R. de Murcia_1" style="display:none">
+			<div id="7RM.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:30  El día en imágenes</div>
 				<div class="epg-dia">01:00  Murcia conecta</div>
 				<div class="epg-dia">03:15  Murcia en vivo</div>
@@ -3303,7 +3303,7 @@
 				<div class="epg-dia">22:00  Yo recuerdo</div>
 				<div class="epg-dia">23:00  Jet Li es el mejor luchador</div>
 			</div>
-			<div id="7 R. de Murcia_2" style="display:none">
+			<div id="7RM.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:30  El día en imágenes</div>
 				<div class="epg-dia">01:00  Murcia conecta</div>
 				<div class="epg-dia">03:15  Murcia en vivo</div>
@@ -3347,7 +3347,7 @@
 				<div class="epg-dia">23:30  Mara Mara</div>
 				<div class="epg-dia">23:55  Artefaktua</div>
 			</div>
-			<div id="ETB 1_1" style="display:none">
+			<div id="ETB1.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:30  Gure bideoteka</div>
 				<div class="epg-dia">02:30  Gure bideoteka</div>
 				<div class="epg-dia">04:30  Hizkamizka</div>
@@ -3377,7 +3377,7 @@
 				<div class="epg-dia">22:30  Zuen Kasatik, Gure Kasara</div>
 				<div class="epg-dia">23:15  Itxi liburuak</div>
 			</div>
-			<div id="ETB 1_2" style="display:none">
+			<div id="ETB1.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:20  EiTB Kultura</div>
 				<div class="epg-dia">00:50  Artefaktua</div>
 				<div class="epg-dia">01:30  Gure bideoteka</div>
@@ -3431,7 +3431,7 @@
 				<div class="epg-dia">22:00  Eguraldia</div>
 				<div class="epg-dia">22:15  El Conquis</div>
 			</div>
-			<div id="ETB 2_1" style="display:none">
+			<div id="ETB2.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:30  Chiloe, una aventura ultratrail</div>
 				<div class="epg-dia">01:25  Vaya semanita</div>
 				<div class="epg-dia">02:40  Atrápame si puedes</div>
@@ -3456,7 +3456,7 @@
 				<div class="epg-dia">22:00  Eguraldia</div>
 				<div class="epg-dia">22:15  Vascos por el mundo</div>
 			</div>
-			<div id="ETB 2_2" style="display:none">
+			<div id="ETB2.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">00:40  EiTB Kultura</div>
 				<div class="epg-dia">01:10  Teknopolis</div>
 				<div class="epg-dia">01:40  Vaya semanita</div>
@@ -3503,7 +3503,7 @@
 				<div class="epg-dia">22:50  Assumptes interns</div>
 				<div class="epg-dia">23:35  Assumptes interns</div>
 			</div>
-			<div id="À Punt_1" style="display:none">
+			<div id="APUNT.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:35  À Punt Directe</div>
 				<div class="epg-dia">03:40  Redifusió</div>
 				<div class="epg-dia">06:00  La colla</div>
@@ -3523,7 +3523,7 @@
 				<div class="epg-dia">22:00  Tot À Punt</div>
 				<div class="epg-dia">22:55  El fonamentalista reticent</div>
 			</div>
-			<div id="À Punt_2" style="display:none">
+			<div id="APUNT.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">01:00  À Punt Directe</div>
 				<div class="epg-dia">04:15  Redifusió</div>
 				<div class="epg-dia">06:00  La colla</div>
@@ -3571,7 +3571,7 @@
 				<div class="epg-dia">21:45  Los Intocables</div>
 				<div class="epg-dia">23:45  Bous i pobles</div>
 			</div>
-			<div id="La 8_1" style="display:none">
+			<div id="8M.TDTChannelsEPG_1" style="display:none">
 				<div class="epg-dia">00:15  Galería del coleccionista</div>
 				<div class="epg-dia">01:15  Bous i pobles</div>
 				<div class="epg-dia">08:00  La 8 Notícies</div>
@@ -3596,7 +3596,7 @@
 				<div class="epg-dia">21:45  El Faro</div>
 				<div class="epg-dia">23:00  Los Intocables</div>
 			</div>
-			<div id="La 8_2" style="display:none">
+			<div id="8M.TDTChannelsEPG_2" style="display:none">
 				<div class="epg-dia">01:15  Bous i pobles</div>
 				<div class="epg-dia">08:00  La 8 Notícies</div>
 				<div class="epg-dia">08:45  L'Oratge</div>
